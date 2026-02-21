@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stbali387 | Vitrina Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --whatsapp: #25d366;
+            --oscuro: #111111;
+            --gris-claro: #f4f4f4;
+            --dorado: #c5a059;
+        }
+        body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background-color: var(--gris-claro); }
+        
+        /* Header */
+        header { background: var(--oscuro); color: white; text-align: center; padding: 40px 20px; }
+        .brand { font-size: 2.5rem; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
+        .subtitle { font-weight: 300; opacity: 0.8; }
+
+        /* Contenedor de Productos */
+        .container { max-width: 1000px; margin: 20px auto; padding: 10px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        
+        /* Card de Producto */
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; position: relative; }
+        .card:hover { transform: translateY(-10px); }
+        .card img, .card video { width: 100%; height: 350px; object-fit: cover; }
+        
+        .badge { position: absolute; top: 15px; left: 15px; background: var(--dorado); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+
+        .info { padding: 20px; text-align: center; }
+        .product-name { font-size: 1.4rem; margin: 10px 0; color: var(--oscuro); }
+        .price { font-size: 1.6rem; color: var(--dorado); font-weight: bold; margin-bottom: 20px; }
+
+        /* BOTÓN DE COMPRA A WHATSAPP */
+        .btn-whatsapp { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background-color: var(--whatsapp); 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px; 
+            border-radius: 10px; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .btn-whatsapp i { margin-right: 10px; font-size: 1.4rem; }
+        .btn-whatsapp:hover { background-color: #128c7e; }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand">STBALI387</h1>
+        <p class="subtitle">Catálogo Exclusivo & Pedidos Directos</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="badge">NUEVO</div>
+            <img src="https://via.placeholder.com/400x500" alt="Producto 1">
+            <div class="info">
+                <h3 class="product-name">Reloj Minimalista Gold</h3>
+                <div class="price">S/ 149.00</div>
+                <a href="https://wa.me/51964004567?text=Hola%20stbali387!%20Quiero%20comprar%20el%20Reloj%20Minimalista%20Gold%20que%20vi%20en%20tu%20vitrina." class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> COMPRAR POR WHATSAPP
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">OFERTA</div>
+            <img src="https://via.placeholder.com/400x500" alt="Producto 2">
+            <div class="info">
+                <h3 class="product-name">Cámara Vintage Black</h3>
+                <div class="price">S/ 299.00</div>
+                <a href="https://wa.me/51964004567?text=Hola!%20Me%20interesa%20la%20Cámara%20Vintage%20Black.%20¿Sigue%20disponible?" class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> COMPRAR POR WHATSAPP
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 stbali387 - Gestión de Ventas Directas
+    </footer>
+
+</body>
+</html>
